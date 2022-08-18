@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="gameScreen.css">
+    <link href="http://fonts.cdnfonts.com/css/boltiz" rel="stylesheet">
+    <script src="rps.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="scoreBoard">
+            <h2 style="margin: 0;">Score</h2>
+            <div class="scores">
+                <div class="playerScore">
+                    <h3>You:</h3>
+                    <h1 id="playerPoints">0</h1>
+                </div>
+                <div class="bobScore">
+                    <h3>Bob:</h3>
+                    <h1 id="bobPoints">0</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bobContainer">
+        <div class="bobModel">
+            <h3>Bob: The Great Wizard</h3>
+            <img id="bob" src="GameAssets/Idle.png">
+        </div>
+        <div class="bobCards">
+            <div>
+                <img id="bobArmor" src="GameAssets/Armor.png">
+            </div>
+            <div>
+                <img id="bobBow" src="GameAssets/Bow.png">
+            </div>
+            <div>
+                <img id="bobSword" src="GameAssets/Sword.png">
+            </div>
+        </div>
+    </div>
+    <div class="gameDialog">
+        <h2 id="result"></h2>
+    </div>
+    <div class="playerContainer">
+        <div class="playerCards">
+            <div>
+                <button id="Armor">
+                    <img src="GameAssets/Armor.png">
+                </button>
+            </div>
+            <div>
+                <button id="Bow">
+                    <img src="GameAssets/Bow.png">
+                </button>
+            </div>
+            <div>
+                <button id="Sword">
+                    <img src="GameAssets/Sword.png">
+                </button>
+            </div>
+        </div>
+        <div class="playerMenu">
+            <div class="dialog">
+                <h2>Choose your attack</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
